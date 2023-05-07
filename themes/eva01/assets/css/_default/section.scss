@@ -1,0 +1,12 @@
+@import "../core";
+@import "baseof";
+
+.section {
+  article {
+    text-align: justify;
+    
+    .head {
+      text-align: left;
+    }
+  }
+}

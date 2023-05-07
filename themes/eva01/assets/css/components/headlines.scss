@@ -1,0 +1,19 @@
+@import "../core";
+
+h1 {
+  color: $color-primary;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: $color-secondary;
+  text-transform: uppercase;
+}
+
+h3 {
+  margin: space(3) 0 space() 0;
+  color: $color-secondary;
+}
+
+h4 {
+}

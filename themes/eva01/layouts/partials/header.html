@@ -1,0 +1,15 @@
+<header>
+    <ul id="main-navigation" class="list-inline">
+        {{ $currentPage := . }}
+        {{ range .Site.Menus.main }} 
+        <li>
+            <a 
+                href="{{ .URL }}" 
+                class="{{ if eq $currentPage.RelPermalink .URL }}active{{ end }}"
+            >
+            {{ .Name }}
+            </a>
+        </li>
+        {{ end }}
+    </ul>
+</header>

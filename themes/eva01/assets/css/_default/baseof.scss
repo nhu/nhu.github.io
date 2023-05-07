@@ -1,0 +1,100 @@
+@import "../core";
+@import "../fonts";
+
+@import "../partials/header";
+
+@import "../components/headlines";
+@import "../components/attribute";
+@import "../components/lists";
+@import "../components/idCard";
+@import "../components/endOfFile";
+@import "../components/skills";
+
+html {
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  width: 80%;
+  align-self: center;
+  font-family: "share_tech_monoregular";
+  line-height: 1.4em;
+  font-size: 1.2em;
+  background-color: $color-bg;
+  color: $color-primary;
+}
+
+a {
+  text-decoration: underline;
+  color: $color-secondary;
+  transition-duration: 0.2s;
+  &:hover {
+    color: $text-primary-bg;
+    background-color: $color-quaternary;
+  }
+  &:active {
+    color: $color-tertiary;
+  }
+  &.active {
+    color: $text-primary-bg;
+    background-color: $color-secondary;
+  }
+}
+
+span.special {
+  color: $text-special
+}
+
+.site-title {
+  display: block;
+  font-size: 2em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+  color: $color-primary;
+  text-transform: lowercase;
+}
+
+article {
+  > :not(h1, h2, h3, .head) {
+    margin-left: space(3);
+    margin-right: space(3);
+  }
+
+  .head {
+    display: flex;
+    align-items: center;
+
+    h1 {
+      flex: 1;
+      color: $color-secondary;
+      margin: space() 0 space() 0;
+    }
+
+    h2 {
+      flex: 1;
+      margin: space() 0 space() 0;
+    }
+
+    .publishDate {
+      font-size: 0.8em;
+      color: $color-tertiary;
+    }
+  }
+
+  p {
+    display: flex;
+    overflow: hidden;
+    margin: space();
+    img {
+      margin: auto;
+    }
+  }
+
+  hr {
+    color: $color-tertiary;
+  }
+}

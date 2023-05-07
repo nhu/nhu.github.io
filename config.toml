@@ -1,0 +1,16 @@
+baseURL = "https://dev.hubaers.de/"
+languageCode = "en-us"
+title = "dev.hubaers.de"
+description = "This is the private website of Nicolas Huber. It contains information about Nicolas Huber as person as well as projects and journeys as a software developer and architect."
+theme = "eva01"
+author = "Nicolas Huber"
+
+[[menu.main]]
+name = "/about.txt"
+url = "/"
+weight = 1
+
+#[[menu.main]]
+#name = "/.trash"
+#url = "/trash/"
+#eight = 2

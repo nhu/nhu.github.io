@@ -1,0 +1,21 @@
+<head>
+    <meta charSet="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    {{- $title := ( .Title ) -}}
+	{{- $siteTitle := ( .Site.Title ) -}}
+	{{- if .IsHome -}}
+	<title>{{ $siteTitle }} </title>
+	{{- else -}}
+	<title>{{ $title }} - {{ $siteTitle }}</title>
+	{{- end -}}
+
+    {{- if isset .Site.Params "favicon" -}}
+	<link rel="icon" type="image/png" href={{ .Site.Params.favicon }} />
+	{{- end -}}
+
+    <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}" />
+	<meta name="robots" content="index,nofollow"/>
+	<link rel="canonical" href="{{ .Site.BaseURL }}">
+    {{ partial "css.html" . }}
+</head>

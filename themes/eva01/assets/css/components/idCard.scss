@@ -1,0 +1,38 @@
+@import "../core";
+@import "avatar";
+
+.box {
+  border: 1px solid $color-secondary;
+  padding: space(3);
+  display: flex;
+}
+
+#id-card {
+  display: flex;
+  flex-direction: row;
+
+  #information {
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding-right: space();
+
+    #full-name {
+      margin: 0;
+
+      span {
+        text-transform: uppercase;
+        background-color: $color-secondary;
+        color: $text-primary-bg;
+        font-size: 1.6em;
+        line-height: 1.2em;
+      }
+    }
+
+    #profession-title {
+      margin: 0 0 space() 0;
+    }
+  }
+}

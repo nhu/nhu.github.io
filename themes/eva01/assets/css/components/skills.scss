@@ -1,0 +1,14 @@
+@import "../core";
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+
+  .skill-set {
+    margin: 0 space(3) 0 0;
+
+    h4 {
+      margin: 0;
+    }
+  }
+}

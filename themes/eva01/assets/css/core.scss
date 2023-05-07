@@ -1,0 +1,17 @@
+$color-primary: #d7d7d7;
+$color-secondary: #37a729;
+$color-tertiary: #875fff;
+$color-quaternary: #ffbb00;
+$color-bg: #222;
+
+$color-dim: $color-tertiary;
+$text-primary-bg: $color-bg;
+
+$text-dim-fg: $color-dim;
+$text-dim-bg: $color-bg;
+$text-special: $color-quaternary; 
+$spacing-space-width: 8px;
+
+@function space($times: 1, $width: $spacing-space-width) {
+    @return $width * $times;
+}

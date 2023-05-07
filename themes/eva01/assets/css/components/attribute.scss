@@ -1,0 +1,23 @@
+@import '../core';
+
+.attribute {
+  margin-top: space();
+  display: flex;
+  
+
+  .label {
+    min-width: space(16);
+    text-transform: uppercase;
+    color: $color-tertiary;
+  }
+
+  .label::after {
+    content: ": ";
+    color: $color-secondary;
+  }
+
+  a {
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+}

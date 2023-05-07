@@ -1,0 +1,35 @@
+.only-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 1190px) {
+}
+
+@media screen and (max-width: 920px) {
+  body {
+    width: 95%;
+  }
+  .no-mobile {
+    display: none;
+  }
+  .only-mobile {
+    display: inherit;
+  }
+  .content {
+    margin-left: space();
+  }
+  #id-card {
+    padding: space();
+  }
+
+  article {
+    > :not(h1, h2, h3, .head) {
+      margin-left: space(1);
+      margin-right: space(1);
+    }
+  }
+
+  .skills .skill-set:not(:last-child) {
+    margin: 0 space(3) space(3) 0;
+  }
+}

@@ -1,0 +1,10 @@
+@import "../core";
+
+.avatar {
+  justify-content: center;
+  img {
+    max-width: 256px;
+    border-radius: 50%;
+    border: space(0.5) solid $color-tertiary;
+  }
+}

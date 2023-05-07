@@ -1,0 +1,13 @@
+@import "core";
+
+blockquote {
+  margin: space() 0 space() 0;
+  border-left: space(0.5) solid $color-tertiary;
+  padding: space(0.5) space() space(0.5) space();
+  background-color: $color-dim;
+  color: darken($color-primary, 5);
+
+  p {
+    margin: 0;
+  }
+}
